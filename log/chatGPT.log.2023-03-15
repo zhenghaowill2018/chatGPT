@@ -1,0 +1,1687 @@
+15244 5612 2023/03/15 17:19:13 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+15244 5612 2023/03/15 17:19:13 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+7772 17644 2023/03/15 17:19:33 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+7772 17644 2023/03/15 17:19:33 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+8048 15788 2023/03/15 17:20:21 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+8048 15788 2023/03/15 17:20:21 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+8048 15788 2023/03/15 17:21:34 ERROR sanic.error http_protocol.py connection_task 157: protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py", line 148, in connection_task
+    await self.app.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 135, in _dispatch
+    group, handlers, params = self.get(event, condition=condition)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 97, in get
+    group, param_basket = self.find_route(
+TypeError: 'NoneType' object is not callable
+8048 15788 2023/03/15 17:21:34 ERROR asyncio base_events.py default_exception_handler 1752: Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<HttpProtocol.connection_task() done, defined at c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py:139> exception=TypeError("'NoneType' object is not callable")>
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py", line 177, in connection_task
+    await self.app.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 135, in _dispatch
+    group, handlers, params = self.get(event, condition=condition)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 97, in get
+    group, param_basket = self.find_route(
+TypeError: 'NoneType' object is not callable
+8048 15788 2023/03/15 17:21:50 ERROR sanic.error http_protocol.py connection_task 157: protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py", line 148, in connection_task
+    await self.app.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 135, in _dispatch
+    group, handlers, params = self.get(event, condition=condition)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 97, in get
+    group, param_basket = self.find_route(
+TypeError: 'NoneType' object is not callable
+8048 15788 2023/03/15 17:21:50 ERROR asyncio base_events.py default_exception_handler 1752: Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<HttpProtocol.connection_task() done, defined at c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py:139> exception=TypeError("'NoneType' object is not callable")>
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py", line 177, in connection_task
+    await self.app.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 135, in _dispatch
+    group, handlers, params = self.get(event, condition=condition)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 97, in get
+    group, param_basket = self.find_route(
+TypeError: 'NoneType' object is not callable
+8048 15788 2023/03/15 17:22:21 ERROR sanic.error http_protocol.py connection_task 157: protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py", line 148, in connection_task
+    await self.app.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 135, in _dispatch
+    group, handlers, params = self.get(event, condition=condition)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 97, in get
+    group, param_basket = self.find_route(
+TypeError: 'NoneType' object is not callable
+8048 15788 2023/03/15 17:22:21 ERROR asyncio base_events.py default_exception_handler 1752: Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<HttpProtocol.connection_task() done, defined at c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py:139> exception=TypeError("'NoneType' object is not callable")>
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py", line 177, in connection_task
+    await self.app.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 135, in _dispatch
+    group, handlers, params = self.get(event, condition=condition)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 97, in get
+    group, param_basket = self.find_route(
+TypeError: 'NoneType' object is not callable
+8048 15788 2023/03/15 17:22:22 ERROR sanic.error http_protocol.py connection_task 157: protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py", line 148, in connection_task
+    await self.app.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 135, in _dispatch
+    group, handlers, params = self.get(event, condition=condition)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 97, in get
+    group, param_basket = self.find_route(
+TypeError: 'NoneType' object is not callable
+8048 15788 2023/03/15 17:22:22 ERROR asyncio base_events.py default_exception_handler 1752: Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<HttpProtocol.connection_task() done, defined at c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py:139> exception=TypeError("'NoneType' object is not callable")>
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py", line 177, in connection_task
+    await self.app.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 135, in _dispatch
+    group, handlers, params = self.get(event, condition=condition)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 97, in get
+    group, param_basket = self.find_route(
+TypeError: 'NoneType' object is not callable
+8048 15788 2023/03/15 17:22:51 ERROR sanic.error http_protocol.py connection_task 157: protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py", line 148, in connection_task
+    await self.app.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 135, in _dispatch
+    group, handlers, params = self.get(event, condition=condition)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 97, in get
+    group, param_basket = self.find_route(
+TypeError: 'NoneType' object is not callable
+8048 15788 2023/03/15 17:22:51 ERROR asyncio base_events.py default_exception_handler 1752: Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<HttpProtocol.connection_task() done, defined at c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py:139> exception=TypeError("'NoneType' object is not callable")>
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\protocols\http_protocol.py", line 177, in connection_task
+    await self.app.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 135, in _dispatch
+    group, handlers, params = self.get(event, condition=condition)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 97, in get
+    group, param_basket = self.find_route(
+TypeError: 'NoneType' object is not callable
+4608 14760 2023/03/15 17:23:54 INFO sanic.root app.py _helper 1389: Goin' Fast @ http://0.0.0.0:8060
+4608 14760 2023/03/15 17:23:57 ERROR asyncio base_events.py default_exception_handler 1752: Exception in callback BaseProactorEventLoop._start_serving.<locals>.loop(<_OverlappedF...195', 54727))>) at C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py:822
+handle: <Handle BaseProactorEventLoop._start_serving.<locals>.loop(<_OverlappedF...195', 54727))>) at C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py:822>
+Traceback (most recent call last):
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 829, in loop
+    protocol = protocol_factory()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server.py", line 135, in __init__
+    self._not_paused = asyncio.Event(loop=loop)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\locks.py", line 168, in __init__
+    super().__init__(loop=loop)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\mixins.py", line 17, in __init__
+    raise TypeError(
+TypeError: As of 3.10, the *loop* parameter was removed from Event() since it is no longer necessary
+11900 11408 2023/03/15 17:24:29 INFO sanic.root app.py _helper 1389: Goin' Fast @ http://0.0.0.0:8060
+11900 11408 2023/03/15 17:24:30 ERROR asyncio base_events.py default_exception_handler 1752: Exception in callback BaseProactorEventLoop._start_serving.<locals>.loop(<_OverlappedF...195', 54765))>) at C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py:822
+handle: <Handle BaseProactorEventLoop._start_serving.<locals>.loop(<_OverlappedF...195', 54765))>) at C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py:822>
+Traceback (most recent call last):
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 829, in loop
+    protocol = protocol_factory()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server.py", line 135, in __init__
+    self._not_paused = asyncio.Event(loop=loop)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\locks.py", line 168, in __init__
+    super().__init__(loop=loop)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\mixins.py", line 17, in __init__
+    raise TypeError(
+TypeError: As of 3.10, the *loop* parameter was removed from Event() since it is no longer necessary
+9152 11432 2023/03/15 17:26:17 INFO sanic.root app.py _helper 1389: Goin' Fast @ http://127.0.0.1:8000
+9152 11432 2023/03/15 17:26:17 WARNING sanic.root server.py serve 878: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+9152 11432 2023/03/15 17:26:17 WARNING sanic.root server.py serve 878: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+9152 11432 2023/03/15 17:26:17 INFO sanic.root server.py serve 884: Starting worker [9152]
+6792 14004 2023/03/15 17:26:54 INFO sanic.root app.py _helper 1389: Goin' Fast @ http://0.0.0.0:8060
+6792 14004 2023/03/15 17:26:54 WARNING sanic.root server.py serve 878: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+6792 14004 2023/03/15 17:26:54 WARNING sanic.root server.py serve 878: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+6792 14004 2023/03/15 17:26:54 INFO sanic.root server.py serve 884: Starting worker [6792]
+6792 14004 2023/03/15 17:27:00 ERROR asyncio base_events.py default_exception_handler 1752: Exception in callback BaseProactorEventLoop._start_serving.<locals>.loop(<_OverlappedF...195', 54838))>) at C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py:822
+handle: <Handle BaseProactorEventLoop._start_serving.<locals>.loop(<_OverlappedF...195', 54838))>) at C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py:822>
+Traceback (most recent call last):
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 829, in loop
+    protocol = protocol_factory()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server.py", line 135, in __init__
+    self._not_paused = asyncio.Event(loop=loop)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\locks.py", line 168, in __init__
+    super().__init__(loop=loop)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\mixins.py", line 17, in __init__
+    raise TypeError(
+TypeError: As of 3.10, the *loop* parameter was removed from Event() since it is no longer necessary
+5428 5796 2023/03/15 17:27:39 INFO sanic.root app.py _helper 1389: Goin' Fast @ http://0.0.0.0:8060
+5428 5796 2023/03/15 17:27:39 WARNING sanic.root server.py serve 878: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+5428 5796 2023/03/15 17:27:39 WARNING sanic.root server.py serve 878: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+5428 5796 2023/03/15 17:27:39 INFO sanic.root server.py serve 884: Starting worker [5428]
+5428 5796 2023/03/15 17:27:42 ERROR asyncio base_events.py default_exception_handler 1752: Exception in callback BaseProactorEventLoop._start_serving.<locals>.loop(<_OverlappedF...195', 54878))>) at C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py:822
+handle: <Handle BaseProactorEventLoop._start_serving.<locals>.loop(<_OverlappedF...195', 54878))>) at C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py:822>
+Traceback (most recent call last):
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 829, in loop
+    protocol = protocol_factory()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server.py", line 135, in __init__
+    self._not_paused = asyncio.Event(loop=loop)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\locks.py", line 168, in __init__
+    super().__init__(loop=loop)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\mixins.py", line 17, in __init__
+    raise TypeError(
+TypeError: As of 3.10, the *loop* parameter was removed from Event() since it is no longer necessary
+15028 15512 2023/03/15 17:29:02 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+15028 15512 2023/03/15 17:29:02 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+17148 16584 2023/03/15 17:29:04 INFO sanic.server runners.py _run_server_forever 152: Starting worker [17148]
+4364 17868 2023/03/15 17:32:11 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+4364 17868 2023/03/15 17:32:11 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+15100 7828 2023/03/15 17:32:15 INFO sanic.server runners.py _run_server_forever 152: Starting worker [15100]
+15100 7828 2023/03/15 17:33:07 INFO chatGPT sanic_main.py normal 37: 调用/normal接口,base_ip:192.168.66.72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+15100 7828 2023/03/15 17:33:20 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in normal
+    result=await sanic_service.normalService(database+"_"+base_ip,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 8, in normalService
+    mysqlDb=settings.database_dirt(database_url)
+TypeError: 'dict' object is not callable
+15100 7828 2023/03/15 17:33:55 INFO chatGPT sanic_main.py normal 37: 调用/normal接口,base_ip:192.168.66.72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+15100 7828 2023/03/15 17:33:58 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in normal
+    result=await sanic_service.normalService(database+"_"+base_ip,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 8, in normalService
+    mysqlDb=settings.database_dirt(database_url)
+TypeError: 'dict' object is not callable
+17656 4592 2023/03/15 17:34:42 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+17656 4592 2023/03/15 17:34:42 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+13020 13692 2023/03/15 17:34:46 INFO sanic.server runners.py _run_server_forever 152: Starting worker [13020]
+13020 13692 2023/03/15 17:34:46 INFO chatGPT sanic_main.py normal 37: 调用/normal接口,base_ip:192.168.66.72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+13020 13692 2023/03/15 17:34:49 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in normal
+    result=await sanic_service.normalService(database+"_"+base_ip,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 8, in normalService
+    result=await GPT2tokenizer.construct_index(database_url,query_sql,prompt)
+TypeError: GPT2tokenizer.construct_index() missing 1 required positional argument: 'prompt'
+15184 17268 2023/03/15 17:36:27 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+15184 17268 2023/03/15 17:36:27 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+4204 16432 2023/03/15 17:36:32 INFO sanic.server runners.py _run_server_forever 152: Starting worker [4204]
+4204 16432 2023/03/15 17:36:32 INFO chatGPT sanic_main.py normal 37: 调用/normal接口,base_ip:192.168.66.72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+4204 16432 2023/03/15 17:36:41 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in normal
+    result=await sanic_service.normalService(database+"_"+base_ip,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 8, in normalService
+    result=await GPT2tokenizer.construct_index(database_url,query_sql,prompt)
+TypeError: GPT2tokenizer.construct_index() missing 1 required positional argument: 'prompt'
+4204 16432 2023/03/15 17:36:46 INFO chatGPT sanic_main.py normal 37: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+4204 16432 2023/03/15 17:36:46 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in normal
+    result=await sanic_service.normalService(database+"_"+base_ip,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 8, in normalService
+    result=await GPT2tokenizer.construct_index(database_url,query_sql,prompt)
+TypeError: GPT2tokenizer.construct_index() missing 1 required positional argument: 'prompt'
+9344 996 2023/03/15 17:37:01 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+9344 996 2023/03/15 17:37:01 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+17360 12740 2023/03/15 17:37:05 INFO sanic.server runners.py _run_server_forever 152: Starting worker [17360]
+17360 12740 2023/03/15 17:37:05 INFO chatGPT sanic_main.py normal 37: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+17360 12740 2023/03/15 17:37:25 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in normal
+    result=await sanic_service.normalService(database+"_"+base_ip,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 8, in normalService
+    result=await GPT2tokenizer.construct_index(database_url,query_sql,prompt)
+TypeError: GPT2tokenizer.construct_index() missing 1 required positional argument: 'prompt'
+12312 11092 2023/03/15 17:38:40 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+12312 11092 2023/03/15 17:38:40 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+17672 8512 2023/03/15 17:38:48 INFO sanic.server runners.py _run_server_forever 152: Starting worker [17672]
+17672 8512 2023/03/15 17:38:51 INFO chatGPT sanic_main.py normal 37: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+17672 8512 2023/03/15 17:38:51 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in normal
+    result=await sanic_service.normalService(database+"_"+base_ip,query_sql,prompt)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 8, in normalService
+    result=await GPT2tokenizer.construct_index(database_url,query_sql,prompt)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 117, in construct_index
+    documents=await self.returnDocuments(database_url,query)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 106, in returnDocuments
+    mysqlDb=settings.database_dirt(database_url)
+TypeError: 'dict' object is not callable
+10316 18084 2023/03/15 17:39:05 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+10316 18084 2023/03/15 17:39:05 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+16296 18400 2023/03/15 17:39:16 INFO sanic.server runners.py _run_server_forever 152: Starting worker [16296]
+16296 18400 2023/03/15 17:39:20 INFO chatGPT sanic_main.py normal 37: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+16296 18400 2023/03/15 17:39:31 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in normal
+    result=await sanic_service.normalService(database+"_"+base_ip,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 8, in normalService
+    result=await GPT2tokenizer.construct_index(database_url,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 117, in construct_index
+    documents=await self.returnDocuments(database_url,query)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 106, in returnDocuments
+    mysqlDb=settings.database_dirt(database_url)
+TypeError: 'dict' object is not callable
+16296 18400 2023/03/15 17:39:35 INFO chatGPT sanic_main.py normal 37: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+16296 18400 2023/03/15 17:40:39 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in normal
+    result=await sanic_service.normalService(database+"_"+base_ip,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 8, in normalService
+    result=await GPT2tokenizer.construct_index(database_url,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 117, in construct_index
+    documents=await self.returnDocuments(database_url,query)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 106, in returnDocuments
+    mysqlDb=settings.database_dirt(database_url)
+TypeError: 'dict' object is not callable
+13276 18088 2023/03/15 17:40:58 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+13276 18088 2023/03/15 17:40:58 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+18044 17636 2023/03/15 17:41:06 INFO sanic.server runners.py _run_server_forever 152: Starting worker [18044]
+18044 17636 2023/03/15 17:41:06 INFO chatGPT sanic_main.py normal 37: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+18044 17636 2023/03/15 17:41:06 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in normal
+    result=await sanic_service.normalService(database+"_"+base_ip,query_sql,prompt)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 8, in normalService
+    result=await GPT2tokenizer.construct_index(database_url,query_sql,prompt)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 117, in construct_index
+    documents=await self.returnDocuments(database_url,query)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 107, in returnDocuments
+    result=await mysqlDb.selectDirt(query,args=None)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\db\mysqlUtils.py", line 213, in selectDirt
+    await mysql_cursor.execute(sql,args)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 598, in _read_packet
+    packet_header = await self._read_bytes(4)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 646, in _read_bytes
+    data = await self._reader.readexactly(num_bytes)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\streams.py", line 707, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\streams.py", line 501, in _wait_for_data
+    await self._waiter
+RuntimeError: Task <Task pending name='Task-8' coro=<connection_task() running at connection_task:15>> got Future <Future pending> attached to a different loop
+13276 18088 2023/03/15 17:41:23 INFO sanic.root manager.py shutdown_signal 264: Received signal SIGINT. Shutting down.
+13276 18088 2023/03/15 17:41:23 INFO sanic.root startup.py serve 872: Server Stopped
+12672 14404 2023/03/15 17:42:25 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+12672 14404 2023/03/15 17:42:25 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+1852 3108 2023/03/15 17:42:33 INFO sanic.server runners.py _run_server_forever 152: Starting worker [1852]
+1852 3108 2023/03/15 17:42:33 INFO chatGPT sanic_main.py normal 37: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+1852 3108 2023/03/15 17:42:33 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in normal
+    result=await sanic_service.normalService(database+"_"+base_ip,query_sql,prompt)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 8, in normalService
+    result=await GPT2tokenizer.construct_index(database_url,query_sql,prompt)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 117, in construct_index
+    documents=await self.returnDocuments(database_url,query)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 107, in returnDocuments
+    result=await mysqlDb.selectDirt(query,args=None)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\db\mysqlUtils.py", line 213, in selectDirt
+    await mysql_cursor.execute(sql,args)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 598, in _read_packet
+    packet_header = await self._read_bytes(4)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 646, in _read_bytes
+    data = await self._reader.readexactly(num_bytes)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\streams.py", line 707, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\streams.py", line 501, in _wait_for_data
+    await self._waiter
+RuntimeError: Task <Task pending name='Task-8' coro=<connection_task() running at connection_task:15>> got Future <Future pending> attached to a different loop
+12672 14404 2023/03/15 17:42:46 INFO sanic.root manager.py shutdown_signal 264: Received signal SIGINT. Shutting down.
+12672 14404 2023/03/15 17:42:46 INFO sanic.root startup.py serve 872: Server Stopped
+15196 2448 2023/03/15 17:53:13 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+15196 2448 2023/03/15 17:53:13 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+13720 18488 2023/03/15 17:53:21 INFO sanic.server runners.py _run_server_forever 152: Starting worker [13720]
+13720 18488 2023/03/15 17:53:21 INFO chatGPT sanic_main.py normal 37: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+13720 18488 2023/03/15 17:53:21 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in normal
+    result=await sanic_service.normalService(database+"_"+base_ip,query_sql,prompt)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 7, in normalService
+    result=await GPT2tokenizer.construct_index(database_url,query_sql,prompt)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 117, in construct_index
+    documents=await self.returnDocuments(database_url,query)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 107, in returnDocuments
+    result=await mysqlDb.selectDirt(query,args=None)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\db\mysqlUtils.py", line 213, in selectDirt
+    await mysql_cursor.execute(sql,args)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 598, in _read_packet
+    packet_header = await self._read_bytes(4)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 646, in _read_bytes
+    data = await self._reader.readexactly(num_bytes)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\streams.py", line 707, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\streams.py", line 501, in _wait_for_data
+    await self._waiter
+RuntimeError: Task <Task pending name='Task-8' coro=<connection_task() running at connection_task:15>> got Future <Future pending> attached to a different loop
+5568 2088 2023/03/15 17:56:03 INFO sanic.root app.py _helper 1389: Goin' Fast @ http://0.0.0.0:8060
+5568 2088 2023/03/15 17:56:03 WARNING sanic.root server.py serve 878: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+5568 2088 2023/03/15 17:56:03 WARNING sanic.root server.py serve 878: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+5568 2088 2023/03/15 17:56:03 INFO sanic.root server.py serve 884: Starting worker [5568]
+5568 2088 2023/03/15 17:56:27 ERROR asyncio base_events.py default_exception_handler 1752: Exception in callback BaseProactorEventLoop._start_serving.<locals>.loop(<_OverlappedF...195', 56678))>) at C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py:822
+handle: <Handle BaseProactorEventLoop._start_serving.<locals>.loop(<_OverlappedF...195', 56678))>) at C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py:822>
+Traceback (most recent call last):
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 829, in loop
+    protocol = protocol_factory()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server.py", line 135, in __init__
+    self._not_paused = asyncio.Event(loop=loop)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\locks.py", line 168, in __init__
+    super().__init__(loop=loop)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\mixins.py", line 17, in __init__
+    raise TypeError(
+TypeError: As of 3.10, the *loop* parameter was removed from Event() since it is no longer necessary
+17796 12724 2023/03/15 18:02:16 INFO sanic.root app.py _helper 1389: Goin' Fast @ http://0.0.0.0:8060
+17796 12724 2023/03/15 18:02:16 WARNING sanic.root server.py serve 878: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+17796 12724 2023/03/15 18:02:16 WARNING sanic.root server.py serve 878: Sanic tried to use loop.add_signal_handler but it is not implemented on this platform.
+17796 12724 2023/03/15 18:02:16 INFO sanic.root server.py serve 884: Starting worker [17796]
+17796 12724 2023/03/15 18:02:28 ERROR asyncio base_events.py default_exception_handler 1752: Exception in callback BaseProactorEventLoop._start_serving.<locals>.loop(<_OverlappedF...195', 56785))>) at C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py:822
+handle: <Handle BaseProactorEventLoop._start_serving.<locals>.loop(<_OverlappedF...195', 56785))>) at C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py:822>
+Traceback (most recent call last):
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\proactor_events.py", line 829, in loop
+    protocol = protocol_factory()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server.py", line 135, in __init__
+    self._not_paused = asyncio.Event(loop=loop)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\locks.py", line 168, in __init__
+    super().__init__(loop=loop)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\mixins.py", line 17, in __init__
+    raise TypeError(
+TypeError: As of 3.10, the *loop* parameter was removed from Event() since it is no longer necessary
+19100 14968 2023/03/15 18:03:33 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+19100 14968 2023/03/15 18:03:33 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+9568 19444 2023/03/15 18:03:41 INFO sanic.server runners.py _run_server_forever 152: Starting worker [9568]
+2964 18860 2023/03/15 18:08:49 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+2964 18860 2023/03/15 18:08:49 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+17772 18596 2023/03/15 18:08:57 INFO sanic.server runners.py _run_server_forever 152: Starting worker [17772]
+17772 18596 2023/03/15 18:09:01 INFO chatGPT sanic_main.py conditionNormal 44: 调用/normal接口,condition:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+17772 18596 2023/03/15 18:09:01 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/condition'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 45, in conditionNormal
+    result=await sanic_service.conditionService(condition,prompt)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 11, in conditionService
+    result=await GPT2tokenizer.contidionReturn(contidion,prompt)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 127, in contidionReturn
+    index = GPTSimpleVectorIndex(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\llama_index\indices\vector_store\vector_indices.py", line 84, in __init__
+    super().__init__(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\llama_index\indices\vector_store\base.py", line 63, in __init__
+    super().__init__(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\llama_index\indices\base.py", line 104, in __init__
+    documents = self._process_documents(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\llama_index\indices\base.py", line 161, in _process_documents
+    for doc in documents:
+TypeError: 'Document' object is not iterable
+16156 13156 2023/03/15 18:09:35 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+16156 13156 2023/03/15 18:09:35 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+18576 15124 2023/03/15 18:09:43 INFO sanic.server runners.py _run_server_forever 152: Starting worker [18576]
+18576 15124 2023/03/15 18:09:43 INFO chatGPT sanic_main.py conditionNormal 44: 调用/normal接口,condition:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+18576 15124 2023/03/15 18:09:44 INFO root token_counter.py wrapper_logic 66: > [build_index_from_documents] Total LLM token usage: 0 tokens
+18576 15124 2023/03/15 18:09:44 INFO root token_counter.py wrapper_logic 69: > [build_index_from_documents] Total embedding token usage: 37 tokens
+18576 15124 2023/03/15 18:09:47 INFO root token_counter.py wrapper_logic 66: > [query] Total LLM token usage: 121 tokens
+18576 15124 2023/03/15 18:09:47 INFO root token_counter.py wrapper_logic 69: > [query] Total embedding token usage: 10 tokens
+18576 15124 2023/03/15 18:09:47 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/condition'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 46, in conditionNormal
+    return response.json(result,cls=DecimalEncoder)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\response\convenience.py", line 50, in json
+    return JSONResponse(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\response\types.py", line 248, in __init__
+    self._encode_body(self._use_dumps(body, **self._use_dumps_kwargs)),
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 28, in default
+    super(DecimalEncoder, self).default(o)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+15456 5088 2023/03/15 18:10:18 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+15456 5088 2023/03/15 18:10:18 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+18376 18744 2023/03/15 18:10:29 INFO sanic.server runners.py _run_server_forever 152: Starting worker [18376]
+18376 18744 2023/03/15 18:10:29 INFO chatGPT sanic_main.py conditionNormal 44: 调用/normal接口,condition:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+18376 18744 2023/03/15 18:10:31 INFO root token_counter.py wrapper_logic 66: > [build_index_from_documents] Total LLM token usage: 0 tokens
+18376 18744 2023/03/15 18:10:31 INFO root token_counter.py wrapper_logic 69: > [build_index_from_documents] Total embedding token usage: 37 tokens
+18376 18744 2023/03/15 18:10:33 INFO root token_counter.py wrapper_logic 66: > [query] Total LLM token usage: 102 tokens
+18376 18744 2023/03/15 18:10:33 INFO root token_counter.py wrapper_logic 69: > [query] Total embedding token usage: 10 tokens
+18376 18744 2023/03/15 18:13:16 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/condition'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 46, in conditionNormal
+    return response.json(result,cls=DecimalEncoder)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\response\convenience.py", line 50, in json
+    return JSONResponse(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\response\types.py", line 248, in __init__
+    self._encode_body(self._use_dumps(body, **self._use_dumps_kwargs)),
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 28, in default
+    super(DecimalEncoder, self).default(o)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+16560 19000 2023/03/15 18:13:28 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+16560 19000 2023/03/15 18:13:28 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+14216 18788 2023/03/15 18:13:36 INFO sanic.server runners.py _run_server_forever 152: Starting worker [14216]
+14216 18788 2023/03/15 18:13:36 INFO chatGPT sanic_main.py conditionNormal 44: 调用/normal接口,condition:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+14216 18788 2023/03/15 18:13:37 INFO root token_counter.py wrapper_logic 66: > [build_index_from_documents] Total LLM token usage: 0 tokens
+14216 18788 2023/03/15 18:13:37 INFO root token_counter.py wrapper_logic 69: > [build_index_from_documents] Total embedding token usage: 37 tokens
+14216 18788 2023/03/15 18:13:41 INFO root token_counter.py wrapper_logic 66: > [query] Total LLM token usage: 138 tokens
+14216 18788 2023/03/15 18:13:41 INFO root token_counter.py wrapper_logic 69: > [query] Total embedding token usage: 10 tokens
+14216 18788 2023/03/15 18:14:25 INFO chatGPT sanic_main.py conditionNormal 44: 调用/normal接口,condition:hello world,I'm fine,prompt:翻译成中文
+14216 18788 2023/03/15 18:14:25 INFO root token_counter.py wrapper_logic 66: > [build_index_from_documents] Total LLM token usage: 0 tokens
+14216 18788 2023/03/15 18:14:25 INFO root token_counter.py wrapper_logic 69: > [build_index_from_documents] Total embedding token usage: 6 tokens
+14216 18788 2023/03/15 18:14:26 INFO root token_counter.py wrapper_logic 66: > [query] Total LLM token usage: 63 tokens
+14216 18788 2023/03/15 18:14:26 INFO root token_counter.py wrapper_logic 69: > [query] Total embedding token usage: 10 tokens
+14584 15640 2023/03/15 18:37:44 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+14584 15640 2023/03/15 18:37:44 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+18084 18788 2023/03/15 18:43:29 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+18084 18788 2023/03/15 18:43:29 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+18196 14392 2023/03/15 18:43:37 INFO sanic.server runners.py _run_server_forever 152: Starting worker [18196]
+18196 14392 2023/03/15 18:43:41 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in sqlNormal
+    mysqlDb=request.app.ctx[database+"_"+base_ip]
+TypeError: 'types.SimpleNamespace' object is not subscriptable
+18588 1684 2023/03/15 18:44:11 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+18588 1684 2023/03/15 18:44:11 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+7784 13012 2023/03/15 18:44:19 INFO sanic.server runners.py _run_server_forever 152: Starting worker [7784]
+7784 13012 2023/03/15 18:44:20 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in sqlNormal
+    mysqlDb=request.app.ctx.database_dirt[database+"_"+base_ip]
+AttributeError: 'types.SimpleNamespace' object has no attribute 'database_dirt'
+17400 18820 2023/03/15 18:44:49 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+17400 18820 2023/03/15 18:44:49 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+13960 8780 2023/03/15 18:45:00 INFO sanic.server runners.py _run_server_forever 152: Starting worker [13960]
+13960 8780 2023/03/15 18:48:53 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in sqlNormal
+    mysqlDb=request.app.ctx.database_dirt[database+"_"+base_ip]
+AttributeError: 'types.SimpleNamespace' object has no attribute 'database_dirt'
+15896 19352 2023/03/15 18:49:58 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+15896 19352 2023/03/15 18:49:58 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+18828 16428 2023/03/15 18:50:09 INFO sanic.server runners.py _run_server_forever 152: Starting worker [18828]
+15896 19352 2023/03/15 18:51:07 INFO sanic.root manager.py shutdown_signal 264: Received signal SIGINT. Shutting down.
+15896 19352 2023/03/15 18:51:07 INFO sanic.root startup.py serve 872: Server Stopped
+18752 18932 2023/03/15 18:51:37 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+18752 18932 2023/03/15 18:51:37 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+10900 1300 2023/03/15 18:51:47 INFO sanic.server runners.py _run_server_forever 152: Starting worker [10900]
+10900 1300 2023/03/15 18:54:57 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in sqlNormal
+    mysqlDb=request.app.ctx.database_dirt[database+"_"+base_ip]
+AttributeError: 'types.SimpleNamespace' object has no attribute 'database_dirt'
+4192 17220 2023/03/15 18:55:20 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+4192 17220 2023/03/15 18:55:20 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+12760 18824 2023/03/15 18:55:31 INFO sanic.server runners.py _run_server_forever 152: Starting worker [12760]
+12760 18824 2023/03/15 18:55:48 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in sqlNormal
+    mysqlDb=request.app.ctx.database_dirt[database+"_"+base_ip]
+AttributeError: 'types.SimpleNamespace' object has no attribute 'database_dirt'
+15984 11576 2023/03/15 18:57:52 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+15984 11576 2023/03/15 18:57:52 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+3084 10872 2023/03/15 18:58:03 INFO sanic.server runners.py _run_server_forever 152: Starting worker [3084]
+3084 10872 2023/03/15 18:58:30 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in sqlNormal
+    mysqlDb=request.app.ctx.database_dirt[database+"_"+base_ip]
+AttributeError: 'types.SimpleNamespace' object has no attribute 'database_dirt'
+9832 19204 2023/03/15 18:59:17 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+9832 19204 2023/03/15 18:59:17 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+4532 14016 2023/03/15 18:59:28 INFO sanic.server runners.py _run_server_forever 152: Starting worker [4532]
+4532 14016 2023/03/15 18:59:46 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in sqlNormal
+    mysqlDb=request.app.ctx.database_dirt[database+"_"+base_ip]
+AttributeError: 'types.SimpleNamespace' object has no attribute 'database_dirt'
+11536 18512 2023/03/15 19:00:35 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+11536 18512 2023/03/15 19:00:35 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2412 17884 2023/03/15 19:00:46 ERROR sanic.error serve.py worker_serve 139: MysqlDB.__init__() got an unexpected keyword argument 'url'
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\runners.py", line 231, in _serve_http_1
+    loop.run_until_complete(app._server_event("init", "before"))
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1598, in _server_event
+    await self.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 165, in _dispatch
+    retval = await maybe_coroutine
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1181, in _listener
+    await maybe_coro
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 92, in setup_db
+    metis_formal_dev_72=MysqlDB(url="mysql://root:metis@2020@192.168.66.72:3306/metis_formal_dev",loop=loop)
+TypeError: MysqlDB.__init__() got an unexpected keyword argument 'url'
+11536 18512 2023/03/15 19:00:46 ERROR sanic.error manager.py wait_for_ack 230: Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+11536 18512 2023/03/15 19:00:46 INFO sanic.root manager.py kill 254: Killing Sanic-Server-0-0 [2412]
+11536 18512 2023/03/15 19:00:46 INFO sanic.root startup.py serve 872: Server Stopped
+3388 6600 2023/03/15 19:01:05 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+3388 6600 2023/03/15 19:01:05 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+19096 15800 2023/03/15 19:01:16 ERROR sanic.error serve.py worker_serve 139: MysqlDB.__init__() got an unexpected keyword argument 'url'
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\runners.py", line 231, in _serve_http_1
+    loop.run_until_complete(app._server_event("init", "before"))
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1598, in _server_event
+    await self.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 165, in _dispatch
+    retval = await maybe_coroutine
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1181, in _listener
+    await maybe_coro
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 92, in setup_db
+    metis_formal_dev_72=MysqlDB(url="mysql://root:metis@2020@192.168.66.72:3306/metis_formal_dev",loop=loop)
+TypeError: MysqlDB.__init__() got an unexpected keyword argument 'url'
+3388 6600 2023/03/15 19:01:16 ERROR sanic.error manager.py wait_for_ack 230: Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+3388 6600 2023/03/15 19:01:16 INFO sanic.root manager.py kill 254: Killing Sanic-Server-0-0 [19096]
+3388 6600 2023/03/15 19:01:16 INFO sanic.root startup.py serve 872: Server Stopped
+15472 12448 2023/03/15 19:01:29 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+15472 12448 2023/03/15 19:01:29 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+18848 14532 2023/03/15 19:01:40 ERROR sanic.error serve.py worker_serve 139: MysqlDB.__init__() got an unexpected keyword argument 'url'
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\runners.py", line 231, in _serve_http_1
+    loop.run_until_complete(app._server_event("init", "before"))
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1598, in _server_event
+    await self.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 165, in _dispatch
+    retval = await maybe_coroutine
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1181, in _listener
+    await maybe_coro
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 92, in setup_db
+    metis_formal_dev_72=MysqlDB(url="mysql://root:metis@2020@192.168.66.72:3306/metis_formal_dev",loop=loop)
+TypeError: MysqlDB.__init__() got an unexpected keyword argument 'url'
+15472 12448 2023/03/15 19:01:40 ERROR sanic.error manager.py wait_for_ack 230: Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+15472 12448 2023/03/15 19:01:40 INFO sanic.root manager.py kill 254: Killing Sanic-Server-0-0 [18848]
+15472 12448 2023/03/15 19:01:40 INFO sanic.root startup.py serve 872: Server Stopped
+16992 19360 2023/03/15 19:02:11 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+16992 19360 2023/03/15 19:02:11 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+16904 17368 2023/03/15 19:02:22 ERROR sanic.error serve.py worker_serve 139: MysqlDB.__init__() got an unexpected keyword argument 'url'
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\runners.py", line 272, in _serve_http_1
+    loop.run_until_complete(app._server_event("init", "after"))
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1598, in _server_event
+    await self.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 165, in _dispatch
+    retval = await maybe_coroutine
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1181, in _listener
+    await maybe_coro
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 93, in setup_db
+    metis_formal_dev_72=MysqlDB(url="mysql://root:metis@2020@192.168.66.72:3306/metis_formal_dev",loop=loop)
+TypeError: MysqlDB.__init__() got an unexpected keyword argument 'url'
+16992 19360 2023/03/15 19:02:22 ERROR sanic.error manager.py wait_for_ack 230: Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+16992 19360 2023/03/15 19:02:22 INFO sanic.root manager.py kill 254: Killing Sanic-Server-0-0 [16904]
+16992 19360 2023/03/15 19:02:22 INFO sanic.root startup.py serve 872: Server Stopped
+18576 16340 2023/03/15 19:02:49 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+18576 16340 2023/03/15 19:02:49 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+19636 19640 2023/03/15 19:02:59 ERROR sanic.error serve.py worker_serve 139: MysqlDB.__init__() got an unexpected keyword argument 'url'
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\runners.py", line 272, in _serve_http_1
+    loop.run_until_complete(app._server_event("init", "after"))
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1598, in _server_event
+    await self.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 165, in _dispatch
+    retval = await maybe_coroutine
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1181, in _listener
+    await maybe_coro
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 92, in setup_db
+    metis_formal_dev_72=MysqlDB(url="mysql://root:metis@2020@192.168.66.72:3306/metis_formal_dev",loop=loop)
+TypeError: MysqlDB.__init__() got an unexpected keyword argument 'url'
+18576 16340 2023/03/15 19:02:59 ERROR sanic.error manager.py wait_for_ack 230: Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+18576 16340 2023/03/15 19:02:59 INFO sanic.root manager.py kill 254: Killing Sanic-Server-0-0 [19636]
+18576 16340 2023/03/15 19:02:59 INFO sanic.root startup.py serve 872: Server Stopped
+19660 19664 2023/03/15 19:03:17 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+19660 19664 2023/03/15 19:03:17 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+15692 432 2023/03/15 19:03:28 INFO sanic.server runners.py _run_server_forever 152: Starting worker [15692]
+20008 20012 2023/03/15 19:03:54 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+20008 20012 2023/03/15 19:03:54 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+20280 19980 2023/03/15 19:04:05 ERROR sanic.error serve.py worker_serve 139: MysqlDB.__init__() got an unexpected keyword argument 'url'
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\runners.py", line 272, in _serve_http_1
+    loop.run_until_complete(app._server_event("init", "after"))
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1598, in _server_event
+    await self.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 165, in _dispatch
+    retval = await maybe_coroutine
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1181, in _listener
+    await maybe_coro
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 92, in setup_db
+    metis_formal_dev_72=MysqlDB(url="mysql://root:metis@2020@192.168.66.72:3306/metis_formal_dev",loop=loop)
+TypeError: MysqlDB.__init__() got an unexpected keyword argument 'url'
+20008 20012 2023/03/15 19:04:05 ERROR sanic.error manager.py wait_for_ack 230: Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+20008 20012 2023/03/15 19:04:05 INFO sanic.root manager.py kill 254: Killing Sanic-Server-0-0 [20280]
+20008 20012 2023/03/15 19:04:05 INFO sanic.root startup.py serve 872: Server Stopped
+19668 19976 2023/03/15 19:04:48 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+19668 19976 2023/03/15 19:04:48 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+15004 13352 2023/03/15 19:04:59 ERROR sanic.error serve.py worker_serve 139: MysqlDB.__init__() got an unexpected keyword argument 'url'
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\runners.py", line 272, in _serve_http_1
+    loop.run_until_complete(app._server_event("init", "after"))
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1598, in _server_event
+    await self.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 165, in _dispatch
+    retval = await maybe_coroutine
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1181, in _listener
+    await maybe_coro
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 92, in setup_db
+    metis_formal_dev_72=MysqlDB(url="mysql://root:metis@2020@192.168.66.72:3306/metis_formal_dev",loop=loop)
+TypeError: MysqlDB.__init__() got an unexpected keyword argument 'url'
+19668 19976 2023/03/15 19:04:59 ERROR sanic.error manager.py wait_for_ack 230: Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+19668 19976 2023/03/15 19:04:59 INFO sanic.root manager.py kill 254: Killing Sanic-Server-0-0 [15004]
+19668 19976 2023/03/15 19:04:59 INFO sanic.root startup.py serve 872: Server Stopped
+20176 20172 2023/03/15 19:06:56 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+20176 20172 2023/03/15 19:06:56 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+14508 20200 2023/03/15 19:07:07 ERROR sanic.error serve.py worker_serve 139: aiomysql.pool.create_pool() argument after ** must be a mapping, not str
+Traceback (most recent call last):
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\server\runners.py", line 272, in _serve_http_1
+    loop.run_until_complete(app._server_event("init", "after"))
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1598, in _server_event
+    await self.dispatch(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 195, in dispatch
+    return await dispatch
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\signals.py", line 165, in _dispatch
+    retval = await maybe_coroutine
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\app.py", line 1181, in _listener
+    await maybe_coro
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 93, in setup_db
+    await metis_formal_dev_72.setup()
+  File "C:\Users\zhengh\Desktop\chatGPT_will\aiomysql_lib.py", line 23, in setup
+    self._pool = await create_pool(**self.mysql_url)
+TypeError: aiomysql.pool.create_pool() argument after ** must be a mapping, not str
+20176 20172 2023/03/15 19:07:07 ERROR sanic.error manager.py wait_for_ack 230: Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+20176 20172 2023/03/15 19:07:07 INFO sanic.root manager.py kill 254: Killing Sanic-Server-0-0 [14508]
+20176 20172 2023/03/15 19:07:07 INFO sanic.root startup.py serve 872: Server Stopped
+6912 2428 2023/03/15 19:14:21 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+6912 2428 2023/03/15 19:14:21 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+7084 9608 2023/03/15 19:14:32 INFO sanic.server runners.py _run_server_forever 152: Starting worker [7084]
+7084 9608 2023/03/15 19:14:43 INFO chatGPT sanic_main.py sqlNormal 39: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+7084 9608 2023/03/15 19:14:50 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 40, in sqlNormal
+    result=await sanic_service.sqlService(mysqlDb,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 7, in sqlService
+    result=await GPT2tokenizer.sqlReturn(mysqlDb,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 116, in sqlReturn
+    documents=await self.returnDocuments(mysqlDb,query)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 106, in returnDocuments
+    result=await mysqlDb.selectDirt(query,args=None)
+AttributeError: 'MysqlDB' object has no attribute 'selectDirt'
+15240 19748 2023/03/15 19:16:41 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+15240 19748 2023/03/15 19:16:41 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+17028 19272 2023/03/15 19:16:53 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 38, in sqlNormal
+    mysqlDb=request.app.ctx.database_dirt[database+"_"+base_ip]
+AttributeError: 'types.SimpleNamespace' object has no attribute 'database_dirt'
+17028 19272 2023/03/15 19:16:53 INFO sanic.server runners.py _run_server_forever 152: Starting worker [17028]
+19284 5588 2023/03/15 19:17:18 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+19284 5588 2023/03/15 19:17:18 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+7420 19980 2023/03/15 19:17:29 INFO sanic.server runners.py _run_server_forever 152: Starting worker [7420]
+7420 19980 2023/03/15 19:17:42 INFO chatGPT sanic_main.py sqlNormal 39: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(t2.review_id, ':', t2.content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+7420 19980 2023/03/15 19:17:42 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 40, in sqlNormal
+    result=await sanic_service.sqlService(mysqlDb,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 7, in sqlService
+    result=await GPT2tokenizer.sqlReturn(mysqlDb,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 116, in sqlReturn
+    documents=await self.returnDocuments(mysqlDb,query)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 106, in returnDocuments
+    result=await mysqlDb.execute(query,args=None)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\aiomysql_lib.py", line 67, in execute
+    count = await cursor.execute(query, args)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\cursors.py", line 239, in execute
+    await self._query(query)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\cursors.py", line 457, in _query
+    await conn.query(q)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 469, in query
+    await self._read_query_result(unbuffered=unbuffered)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 672, in _read_query_result
+    await result.read()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 1153, in read
+    first_packet = await self.connection._read_packet()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\aiomysql\connection.py", line 641, in _read_packet
+    packet.raise_for_error()
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 't2.review_id' in 'field list'")
+8404 20476 2023/03/15 19:18:31 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+8404 20476 2023/03/15 19:18:31 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+20208 20120 2023/03/15 19:18:41 INFO sanic.server runners.py _run_server_forever 152: Starting worker [20208]
+20208 20120 2023/03/15 19:18:52 INFO chatGPT sanic_main.py sqlNormal 39: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(review_id, ':', content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+20208 20120 2023/03/15 19:18:52 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 40, in sqlNormal
+    result=await sanic_service.sqlService(mysqlDb,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 7, in sqlService
+    result=await GPT2tokenizer.sqlReturn(mysqlDb,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 116, in sqlReturn
+    documents=await self.returnDocuments(mysqlDb,query)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 108, in returnDocuments
+    for item in result:
+TypeError: 'int' object is not iterable
+10928 18692 2023/03/15 19:19:24 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+10928 18692 2023/03/15 19:19:24 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+14668 2568 2023/03/15 19:19:35 INFO sanic.server runners.py _run_server_forever 152: Starting worker [14668]
+14668 2568 2023/03/15 19:19:40 INFO chatGPT sanic_main.py sqlNormal 39: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(review_id, ':', content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+14668 2568 2023/03/15 19:20:07 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 40, in sqlNormal
+    result=await sanic_service.sqlService(mysqlDb,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 7, in sqlService
+    result=await GPT2tokenizer.sqlReturn(mysqlDb,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 116, in sqlReturn
+    documents=await self.returnDocuments(mysqlDb,query)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 108, in returnDocuments
+    for item in result:
+TypeError: 'int' object is not iterable
+17916 10176 2023/03/15 19:20:17 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+17916 10176 2023/03/15 19:20:17 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+19820 3796 2023/03/15 19:20:28 INFO sanic.server runners.py _run_server_forever 152: Starting worker [19820]
+19820 3796 2023/03/15 19:20:40 INFO chatGPT sanic_main.py sqlNormal 39: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(review_id, ':', content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+19820 3796 2023/03/15 19:23:23 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 40, in sqlNormal
+    result=await sanic_service.sqlService(mysqlDb,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 7, in sqlService
+    result=await GPT2tokenizer.sqlReturn(mysqlDb,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 116, in sqlReturn
+    documents=await self.returnDocuments(mysqlDb,query)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 111, in returnDocuments
+    documents.append(Document(doc_str))
+  File "<string>", line 8, in __init__
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\llama_index\readers\schema\base.py", line 22, in __post_init__
+    raise ValueError("text field not set.")
+ValueError: text field not set.
+18720 19708 2023/03/15 19:23:34 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+18720 19708 2023/03/15 19:23:34 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+18508 2428 2023/03/15 19:23:44 INFO sanic.server runners.py _run_server_forever 152: Starting worker [18508]
+18508 2428 2023/03/15 19:23:49 INFO chatGPT sanic_main.py sqlNormal 39: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(review_id, ':', content) from au_review where asin='B08FSNKH9M',prompt:翻译成中文
+18508 2428 2023/03/15 19:27:51 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 40, in sqlNormal
+    result=await sanic_service.sqlService(mysqlDb,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\sanic_service.py", line 7, in sqlService
+    result=await GPT2tokenizer.sqlReturn(mysqlDb,query_sql,prompt)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 116, in sqlReturn
+    documents=await self.returnDocuments(mysqlDb,query)
+  File "C:\Users\zhengh\Desktop\chatGPT_will\gpt_tokener.py", line 111, in returnDocuments
+    documents.append(Document(doc_str))
+  File "<string>", line 8, in __init__
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\llama_index\readers\schema\base.py", line 22, in __post_init__
+    raise ValueError("text field not set.")
+ValueError: text field not set.
+20044 16580 2023/03/15 19:28:03 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+20044 16580 2023/03/15 19:28:03 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+14588 19892 2023/03/15 19:28:11 INFO sanic.server runners.py _run_server_forever 152: Starting worker [14588]
+14588 19892 2023/03/15 19:28:23 INFO chatGPT sanic_main.py sqlNormal 39: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(review_id, ':', content) from au_review where asin='B08FSNKH9M',prompt:翻译成中文
+14588 19892 2023/03/15 19:28:52 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:28:53 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:28:53 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:28:55 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:28:56 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:28:57 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:00 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:01 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:02 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:04 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:06 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:06 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:07 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:07 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:10 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:12 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:13 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:15 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:15 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:19 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:20 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:21 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:22 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:24 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:25 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:26 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:27 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:28 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:29 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:30 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:31 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:32 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:33 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:34 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:35 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:35 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:36 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:38 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:39 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:39 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:40 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:41 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:41 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+14588 19892 2023/03/15 19:29:42 INFO openai util.py log_info 67: error_code=None error_message='Rate limit reached for default-global-with-image-limits in organization org-HgG3l1FJzaLoJkuj2DOdSy79 on requests per min. Limit: 60 / min. Please try again in 1s. Contact support@openai.com if you continue to have issues. Please add a payment method to your account to increase your rate limit. Visit https://platform.openai.com/account/billing to add a payment method.' error_param=None error_type=requests message='OpenAI API error received' stream_error=False
+19708 15140 2023/03/15 19:29:50 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+19708 15140 2023/03/15 19:29:50 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2076 18620 2023/03/15 19:29:58 INFO sanic.server runners.py _run_server_forever 152: Starting worker [2076]
+2076 18620 2023/03/15 19:30:00 INFO chatGPT sanic_main.py sqlNormal 39: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(review_id, ':', content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+2076 18620 2023/03/15 19:30:01 INFO root token_counter.py wrapper_logic 66: > [build_index_from_documents] Total LLM token usage: 0 tokens
+2076 18620 2023/03/15 19:30:01 INFO root token_counter.py wrapper_logic 69: > [build_index_from_documents] Total embedding token usage: 28 tokens
+2076 18620 2023/03/15 19:30:05 INFO root token_counter.py wrapper_logic 66: > [query] Total LLM token usage: 136 tokens
+2076 18620 2023/03/15 19:30:05 INFO root token_counter.py wrapper_logic 69: > [query] Total embedding token usage: 10 tokens
+2076 18620 2023/03/15 19:30:05 ERROR sanic.error handlers.py log 196: Exception occurred while handling uri: 'http://192.168.66.195:8060/api/normal/sql'
+Traceback (most recent call last):
+  File "handle_request", line 96, in handle_request
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 41, in sqlNormal
+    return response.json(result,cls=DecimalEncoder)
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\response\convenience.py", line 50, in json
+    return JSONResponse(
+  File "c:\Users\zhengh\Desktop\chatGPT_env\lib\site-packages\sanic\response\types.py", line 248, in __init__
+    self._encode_body(self._use_dumps(body, **self._use_dumps_kwargs)),
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "c:\Users\zhengh\Desktop\chatGPT_will\sanic_main.py", line 30, in default
+    super(DecimalEncoder, self).default(o)
+  File "C:\Users\zhengh\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Response is not JSON serializable
+10632 20404 2023/03/15 19:30:24 INFO sanic.root motd.py display 113: 
+  ┌─────────────────────────────────────────────────────────────┐
+  │                        Sanic v22.12.0                       │
+  │               Goin' Fast @ http://0.0.0.0:8060              │
+  ├───────────────────────┬─────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │     mode: production, single worker │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │   server: sanic, HTTP/1.1           │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   python: 3.10.9                    │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │ platform: Windows-10-10.0.22000-SP0 │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ packages: sanic-routing==22.8.0     │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │                                     │
+  │ [48;2;255;13;104m                     [0m │                                     │
+  │ Build Fast. Run Fast. │                                     │
+  └───────────────────────┴─────────────────────────────────────┘
+
+10632 20404 2023/03/15 19:30:24 WARNING sanic.error startup.py _helper 540: [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+18872 14684 2023/03/15 19:30:32 INFO sanic.server runners.py _run_server_forever 152: Starting worker [18872]
+18872 14684 2023/03/15 19:30:35 INFO chatGPT sanic_main.py sqlNormal 39: 调用/normal接口,base_ip:72,database,metis_formal_dev,query_sql:select CONCAT(review_id, ':', content) from au_review where review_id='R10003URBLW547',prompt:翻译成中文
+18872 14684 2023/03/15 19:30:36 INFO root token_counter.py wrapper_logic 66: > [build_index_from_documents] Total LLM token usage: 0 tokens
+18872 14684 2023/03/15 19:30:36 INFO root token_counter.py wrapper_logic 69: > [build_index_from_documents] Total embedding token usage: 28 tokens
+18872 14684 2023/03/15 19:30:38 INFO root token_counter.py wrapper_logic 66: > [query] Total LLM token usage: 124 tokens
+18872 14684 2023/03/15 19:30:38 INFO root token_counter.py wrapper_logic 69: > [query] Total embedding token usage: 10 tokens
