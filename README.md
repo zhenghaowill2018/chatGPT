@@ -3,6 +3,10 @@
 #### web框架：sanic
 
 ## Example Usage
+### 解决问题
+1.集成llama_index，预先加载index（节约时间）
+2.突破token限制（解决大文本无法提问的难题）
+
 ### 配置setting
 ```python
 #chatGPT api存放路径
