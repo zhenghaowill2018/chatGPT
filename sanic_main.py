@@ -91,12 +91,10 @@ async def setup_db(app, loop):
     #app.ctx.test1 = 1000
     #loop = asyncio.get_running_loop()
     metis_formal_dev_72=MysqlDB(settings.DATABASE_DES_72,loop=loop)
-    metis_formal_dev_71=MysqlDB(settings.DATABASE_DES_71,loop=loop)
     await metis_formal_dev_72.setup()
-    await metis_formal_dev_71.setup()
     app.ctx.database_dirt={
-            "metis_formal_dev_192.168.66.72":metis_formal_dev_72,
-            "metis_formal_dev_192.168.66.71":metis_formal_dev_71
+            #数据库的ip地址，这边需要自己配置
+            "metis_formal_dev_数据库的ip地址":metis_formal_dev_72,
         }
         
 #test2
